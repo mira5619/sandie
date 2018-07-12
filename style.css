@@ -111,7 +111,7 @@ main {
 }
 
 section {
-    width: 70%;
+    width: 95%;
     margin: 30px auto;
     border-radius: 5px;
     box-shadow: 2px 3px 5px var(--grey-light);
@@ -120,13 +120,13 @@ section {
 ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    /* list-style-type: none; */
     height: 0;
     overflow: hidden;
     font-family: 'Kalam', cursive;
     background-image: url("notebook-page.jpg");
     background-size: 100%;
-    transition: height 1s ease-out;
+    /* transition: height 1s ease-out; */
 }
 
 li {
@@ -139,4 +139,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px){
+    section {
+        width: 70%;
+    }
 }
