@@ -1,0 +1,142 @@
+
+
+:root {
+    --main-bg-color: hsl(0, 5%, 92%);
+    --bg-black: hsla(0, 0%, 0%, 1);
+    --grey-light: hsla(0, 4%, 56%, 1);
+    --col1: hsla(347, 72%, 72%, 1);
+    --col2: hsla(112, 30%, 61%, 1);
+    --col3: hsla(54, 44%, 58%, 1);
+    --col4: hsla(213, 70%, 64%, 1);
+    --col5: hsla(272, 61%, 71%, 1);
+    --col6: hsla(180, 100%, 25%, 1);
+    --col1-light: hsla(347, 72%, 72%, 0.3);
+    --col2-light: hsla(112, 30%, 61%, .3);
+    --col3-light: hsla(54, 44%, 58%, .3);
+    --col4-light: hsla(213, 70%, 64%, .3);
+    --col5-light: hsla(272, 61%, 71%, .3);
+    --col6-light: hsla(180, 100%, 25%, .3)
+}
+
+.youTube {
+    border: 5px solid var(--col6);
+    background-color: var(--col6-light);
+}
+
+.youTube h3 {
+    background-color: var(--col6);
+}
+
+.tedTalks {
+    border: 5px solid var(--col2);
+    background-color: var(--col2-light);
+}
+
+.tedTalks h3 {
+    background-color: var(--col2);
+}
+
+.books {
+    border: 5px solid var(--col3);
+    background-color: var(--col3-light);
+}
+
+.books h3 {
+    background-color: var(--col3);
+}
+
+.other {
+    border: 5px solid var(--col4);
+    background-color: var(--col4-light);
+}
+
+.other h3 {
+    background-color: var(--col4);
+}
+
+.emails {
+    border: 5px solid var(--col5);
+    background-color: var(--col5-light);
+}
+
+.emails h3 {
+    background-color: var(--col5);
+}
+
+.emails h3,
+.books h3,
+.other h3,
+.tedTalks h3,
+.youTube h3 {
+    color: white;
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-black);
+    color: white;
+    z-index: 99;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h3 {
+    font-weight: 300;
+}
+
+main {
+    margin-top: 130px;
+}
+
+section {
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px var(--grey-light);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 0;
+    overflow: hidden;
+    font-family: 'Kalam', cursive;
+    background-image: url("notebook-page.jpg");
+    background-size: 100%;
+    transition: height 1s ease-out;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
